@@ -46,30 +46,6 @@
             text-align: center;
             margin-bottom: 2em;
         }
-        .grid-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5em;
-        }
-        .grid-item {
-            background-color: #fff;
-            padding: 1.5em;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-            text-align: center;
-            transition: transform 0.3s ease;
-        }
-        .grid-item:hover {
-            transform: translateY(-5px);
-        }
-        .grid-item h3 {
-            margin: 0.5em 0;
-            color: #333;
-        }
-        .grid-item p {
-            color: #666;
-            font-size: 0.9em;
-        }
     </style>
 </head>
 <body>
@@ -90,37 +66,43 @@
         <div class="title">
             <h1>Centro de Conocimiento MUNINN</h1>
         </div>
-        <div class="grid-container">
-            <div class="grid-item">
-                <h3>Noticias</h3>
-                <p>Actualizaciones internas, lanzamientos y comunicados.</p>
-            </div>
-            <div class="grid-item">
-                <h3>Soporte N1</h3>
-                <p>Validaciones técnicas, routers y herramientas.</p>
-            </div>
-            <div class="grid-item">
-                <h3>Conociendo las herramientas</h3>
-                <p>Guías para aprender y manejar plataformas técnicas de soporte.</p>
-            </div>
-             <div class="grid-item">
-                <h3>Retención</h3>
-                <p>Causas de fuga, scripts y ofertas.</p>
-            </div>
-             <div class="grid-item">
-                <h3>SAC / PQR</h3>
-                <p>Gestión de peticiones, quejas y reclamos.</p>
-            </div>
-             <div class="grid-item">
-                <h3>Diccionario Técnico</h3>
-                <p>Términos clave y definiciones del soporte.</p>
-            </div>
-             <div class="grid-item">
-                <h3>Calidad</h3>
-                <p>Criterios de evaluación, auditorías y retroalimentaciones.</p>
-            </div>
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px;">
+            <a style="flex: 1 0 100%; background: #f0f4f8; padding: 20px; border-radius: 12px; text-align: center; text-decoration: none; color: #222; box-shadow: 0 3px 8px rgba(0,0,0,0.08);">
+                <div style="font-size: 40px;">📰</div>
+                <div style="font-weight: bold; font-size: 18px; margin-top: 8px;">Noticias</div>
+                <div style="font-size: 13px; color: #555;">Actualizaciones internas, lanzamientos y comunicados.</div>
+            </a>
+            <a style="flex: 1 0 45%; background: #f0f4f8; padding: 20px; border-radius: 12px; text-align: center; text-decoration: none; color: #222; box-shadow: 0 3px 8px rgba(0,0,0,0.08);">
+                <div style="font-size: 40px;">🧰</div>
+                <div style="font-weight: bold; font-size: 18px; margin-top: 8px;">Soporte N1</div>
+                <div style="font-size: 13px; color: #555;">Validaciones t&eacute;cnicas, routers y herramientas.</div>
+            </a>
+            <a style="flex: 1 0 45%; background: #f0f4f8; padding: 20px; border-radius: 12px; text-align: center; text-decoration: none; color: #222; box-shadow: 0 3px 8px rgba(0,0,0,0.08);">
+                <div style="font-size: 40px;">🛠️</div>
+                <div style="font-weight: bold; font-size: 18px; margin-top: 8px;">Conociendo las herramientas</div>
+                <div style="font-size: 13px; color: #555;">Gu&iacute;as para aprender y manejar plataformas t&eacute;cnicas de soporte.</div>
+            </a>
+            <a style="flex: 1 0 45%; background: #f0f4f8; padding: 20px; border-radius: 12px; text-align: center; text-decoration: none; color: #222; box-shadow: 0 3px 8px rgba(0,0,0,0.08);">
+                <div style="font-size: 40px;">💬</div>
+                <div style="font-weight: bold; font-size: 18px; margin-top: 8px;">Retenci&oacute;n</div>
+                <div style="font-size: 13px; color: #555;">Causas de fuga, scripts y ofertas.</div>
+            </a>
+            <a style="flex: 1 0 45%; background: #f0f4f8; padding: 20px; border-radius: 12px; text-align: center; text-decoration: none; color: #222; box-shadow: 0 3px 8px rgba(0,0,0,0.08);">
+                <div style="font-size: 40px;">📨</div>
+                <div style="font-weight: bold; font-size: 18px; margin-top: 8px;">SAC / PQR</div>
+                <div style="font-size: 13px; color: #555;">Gesti&oacute;n de peticiones, quejas y reclamos.</div>
+            </a>
+            <a style="flex: 1 0 45%; background: #f0f4f8; padding: 20px; border-radius: 12px; text-align: center; text-decoration: none; color: #222; box-shadow: 0 3px 8px rgba(0,0,0,0.08);">
+                <div style="font-size: 40px;">📚</div>
+                <div style="font-weight: bold; font-size: 18px; margin-top: 8px;">Diccionario T&eacute;cnico</div>
+                <div style="font-size: 13px; color: #555;">T&eacute;rminos clave y definiciones del soporte.</div>
+            </a>
+            <a style="flex: 1 0 45%; background: #f0f4f8; padding: 20px; border-radius: 12px; text-align: center; text-decoration: none; color: #222; box-shadow: 0 3px 8px rgba(0,0,0,0.08);">
+                <div style="font-size: 40px;">✅</div>
+                <div style="font-weight: bold; font-size: 18px; margin-top: 8px;">Calidad</div>
+                <div style="font-size: 13px; color: #555;">Criterios de evaluaci&oacute;n, auditor&iacute;as y retroalimentaciones.</div>
+            </a>
         </div>
     </div>
-
 </body>
 </html>
